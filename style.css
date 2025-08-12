@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background-video {
+    height: 100dvh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.container {
+    color: white;
+    height: 100dvh;
+    height: 100vh;
+}
+
+.header-name {
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    font-size: 1rem;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: fira-code, monospace;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: #A0CED9;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.whoAmI {
+    font-family: fira-code, monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: white 5px solid;
+    cursor: pointer;
+    width: 650px;
+    height: 96px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+    margin-top: 200px;
+}
+
+.whoAmI:hover {
+    background-color: transparent;
+    color: white;
+    border: white 5px solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.hero-image {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fira-code, monospace;
+    text-align: center;
+    line-height: .8;
+    margin-top: 200px;
+}
+
+.hero-text1 {
+    font-size: 128px;
+}
+.hero-text2 {
+    font-size: 64px;
+    color: #A0CED9;
+    padding-left: 300px
+}
+
+.active {
+    color: #A0CED9;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .whoAmI {
+        font-size: 2rem;
+        width: 75%;
+        margin-top: -100px;
+    }
+
+    .nav {
+        margin-left: 0;
+        margin-top: 50px;
+        justify-content: center;
+        display: none;
+    }
+
+    a {
+        font-size: 1rem;
+        font-weight: medium;
+    }
+    .hero-text1 {
+        font-size: 48px;
+    }
+    .hero-text2 {
+        font-size: 32px;
+        padding-left: 55px;
+    }
+    .hero-image {
+        width: 100%;
+        margin-top: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-name {
+        display: none;
+        width: 50px;
+        height: 50px;
+    }
+}
